@@ -73,7 +73,7 @@
             this.buttonAbout.Name = "buttonAbout";
             this.buttonAbout.Size = new System.Drawing.Size(329, 55);
             this.buttonAbout.TabIndex = 5;
-            this.buttonAbout.Text = "About";
+            this.buttonAbout.Text = "Available Connections";
             this.buttonAbout.UseVisualStyleBackColor = true;
             this.buttonAbout.Click += new System.EventHandler(this.buttonAbout_Click);
             // 
