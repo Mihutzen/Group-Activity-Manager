@@ -9,6 +9,10 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
 using MySql.Data.MySqlClient;
+using System.Drawing.Drawing2D;
+using FireSharp.Config;
+using FireSharp.Interfaces;
+using FireSharp.Response;
 
 namespace Server
 {
@@ -22,10 +26,31 @@ namespace Server
         [DllImportAttribute("user32.dll")]
         public static extern bool ReleaseCapture();
 
+        IFirebaseConfig ifc = new FirebaseConfig()
+        {
+            AuthSecret = "dv61oELdN30DK7KcH56f1B3gujL6FFUiJ0Y2l5wh",
+            BasePath = "https://groupactivitymanager-default-rtdb.firebaseio.com/"
+        };
+
+        IFirebaseClient client;
+
         public Login()
         {
             InitializeComponent();
             txtPassword.PasswordChar = '*';
+        }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+            try
+            {
+                client = new FireSharp.FirebaseClient(ifc);
+            }
+
+            catch
+            {
+                MessageBox.Show("No Internet or Connection Problem");
+            }
         }
 
         private void Login_MouseDown(object sender, System.Windows.Forms.MouseEventArgs e)
@@ -53,87 +78,43 @@ namespace Server
             reg.ShowDialog();
         }
 
-        private bool wardenCheck()
-        {
-            String passHash = Register.CreateMD5(txtPassword.Text);
-            MySqlConnection connection;
-            string server = "127.0.0.1";
-            string database = "gamdb";
-            string uid = "admin";
-            string password = "admin";
-            string connectionString;
-            connectionString = "SERVER=" + server + ";" + "DATABASE=" + database + ";" + "UID=" + uid + ";" + "PASSWORD=" + password + ";";
-            connection = new MySqlConnection(connectionString);
-
-            connection.Open();
-
-            MySqlCommand cmd_admin = new MySqlCommand("SELECT Password FROM warden WHERE Username=@Username", connection);
-            cmd_admin.Parameters.AddWithValue("@Username", txtUsername.Text);
-            MySqlDataReader dr = cmd_admin.ExecuteReader();
-            while (dr.Read())
-            {
-                String pass = dr.GetString(0);
-                if (pass == passHash)
-                {
-                    return true;
-                }
-            }
-            return false;
-        }
-
-        private bool participantsCheck()
-        {
-            String passHash = Register.CreateMD5(txtPassword.Text);
-            MySqlConnection connection;
-            string server = "127.0.0.1";
-            string database = "gamdb";
-            string uid = "admin";
-            string password = "admin";
-            string connectionString;
-            connectionString = "SERVER=" + server + ";" + "DATABASE=" + database + ";" + "UID=" + uid + ";" + "PASSWORD=" + password + ";";
-            connection = new MySqlConnection(connectionString);
-
-            connection.Open();
-
-            MySqlCommand cmd_admin = new MySqlCommand("SELECT Password FROM participants WHERE Username=@Username", connection);
-            cmd_admin.Parameters.AddWithValue("@Username", txtUsername.Text);
-            MySqlDataReader dr = cmd_admin.ExecuteReader();
-            while (dr.Read())
-            {
-                String pass = dr.GetString(0);
-                if (pass == passHash)
-                {
-                    return true;
-                }
-            }
-            return false;
-        }
-
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            if(wardenCheck().Equals(true))
-            {
-                /*Form1 f1 = new Form1();
-                f1.ShowDialog();*/
 
+            FirebaseResponse res = client.Get(@"Users/" + txtUsername.Text);
+            MyUser ResUser = res.ResultAs<MyUser>();// database result
+
+            MyUser CurUser = new MyUser() // USER GIVEN INFO
+            {
+                Username = txtUsername.Text,
+                Password = Register.CreateMD5(txtPassword.Text)
+            };
+
+            if (txtUsername.Text == "" || txtPassword.Text == "")
+            {
+                Introduceti introduceti = new Introduceti();
+                introduceti.ShowDialog();
+                return;
+            }
+
+            if (MyUser.IsEqual(ResUser, CurUser))
+            {
                 this.Hide();
                 var f1 = new Form1();
                 f1.Closed += (s, args) => this.Close();
                 f1.Show();
             }
-            else if(participantsCheck().Equals(true))
-            {
-                /*FormClient formClient = new FormClient();
-                formClient.ShowDialog();*/
+            
+        }
 
-                this.Hide();
-                var formClient = new FormClient();
-                formClient.Closed += (s, args) => this.Close();
-                formClient.Show();
-            }
-            else
+        private void Login_Paint(object sender, PaintEventArgs e)
+        {
+            using (LinearGradientBrush brush = new LinearGradientBrush(this.ClientRectangle,
+                                                                Color.FromArgb(5, 37, 84),
+                                                                Color.FromArgb(4, 29, 66),
+                                                               90F))
             {
-                MessageBox.Show("NO :<");
+                e.Graphics.FillRectangle(brush, this.ClientRectangle);
             }
         }
     }

@@ -1,4 +1,7 @@
-﻿using System;
+﻿using FireSharp.Config;
+using FireSharp.Interfaces;
+using FireSharp.Response;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -18,6 +21,27 @@ namespace Server
         private readonly TcpClient client = new TcpClient();
         private NetworkStream mainStream;
         private int portNumber;
+
+        IFirebaseConfig ifc = new FirebaseConfig()
+        {
+            AuthSecret = "dv61oELdN30DK7KcH56f1B3gujL6FFUiJ0Y2l5wh",
+            BasePath = "https://groupactivitymanager-default-rtdb.firebaseio.com/"
+        };
+
+        IFirebaseClient fbClient;
+
+        private void FormClient_Load(object sender, EventArgs e)
+        {
+            try
+            {
+                fbClient = new FireSharp.FirebaseClient(ifc);
+            }
+
+            catch
+            {
+                MessageBox.Show("No Internet or Connection Problem");
+            }
+        }
 
         private static Image GrabDesktop()
         {
@@ -43,30 +67,19 @@ namespace Server
 
         private void buttonConnect_Click(object sender, EventArgs e)
         {
-            portNumber = int.Parse(txtPort.Text);
-            try
+            if (txtCodeFornServer.Text == "")
             {
-                client.Connect(txtIP.Text, portNumber);
-                MessageBox.Show("Acum ii poti vedea ecranul :))))))))");
+                MessageBox.Show("Pune codul");
+                return;
             }
-            catch (Exception)
-            {
-                MessageBox.Show("Nu ii poti vedea ecranul :< ");
-            }
-        }
 
-        private void buttonShare_Click(object sender, EventArgs e)
-        {
-            if (btnSend.Text.StartsWith("Share"))
-            {
-                timer1.Start();
-                btnSend.Text = "Stop Sharing";
-            }
-            else
-            {
-                timer1.Stop();
-                btnSend.Text = "Share Screen";
-            }
+            FirebaseResponse res = fbClient.Get(@"Session/" + txtCodeFornServer.Text);
+            Session ResSes = res.ResultAs<Session>();// database result
+
+            client.Connect(ResSes.IP, int.Parse(ResSes.Port));
+            //MessageBox.Show("Acum ii poti vedea ecranul :))))))))");
+            timer1.Start();
+            
         }
 
         private void timer1_Tick(object sender, EventArgs e)

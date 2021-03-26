@@ -15,6 +15,10 @@ namespace Server
         public FormHome()
         {
             InitializeComponent();
+            label1.Parent = pictureBox1;
+            label2.Parent = pictureBox1;
+            label3.Parent = pictureBox1;
+
         }
     }
 }

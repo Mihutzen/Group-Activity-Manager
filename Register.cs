@@ -15,6 +15,7 @@ using System.Security.Cryptography;
 using FireSharp.Config;
 using FireSharp.Interfaces;
 using FireSharp.Response;
+using System.Drawing.Drawing2D;
 
 namespace Server
 {
@@ -28,11 +29,32 @@ namespace Server
         [DllImportAttribute("user32.dll")]
         public static extern bool ReleaseCapture();
 
+        IFirebaseConfig ifc = new FirebaseConfig()
+        {
+            AuthSecret = "dv61oELdN30DK7KcH56f1B3gujL6FFUiJ0Y2l5wh",
+            BasePath = "https://groupactivitymanager-default-rtdb.firebaseio.com/"
+        };
+
+        IFirebaseClient client;
+
         public Register()
         {
             InitializeComponent();
             txtConfirm.PasswordChar = '*';
             txtPassword.PasswordChar = '*';
+        }
+
+        private void Register_Load(object sender, EventArgs e)
+        {
+            try
+            {
+                client = new FireSharp.FirebaseClient(ifc);
+            }
+
+            catch
+            {
+                MessageBox.Show("No Internet or Connection Problem");
+            }
         }
 
         public static string CreateMD5(string input)
@@ -64,7 +86,7 @@ namespace Server
 
         private void buttonClose_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            this.Close();
         }
 
         private void buttonMinimize_Click(object sender, EventArgs e)
@@ -76,63 +98,46 @@ namespace Server
         {
             //TODO: verifica adresa email
             //TODO: duplicate username & stuff
-            if(comboBox.Text == "" || txtConfirm.Text=="" || txtEmail.Text=="" || txtFirstName.Text=="" || txtLastName.Text=="" || txtPassword.Text=="" || txtUsername.Text=="")
+            if (cmbType.Text == "" || txtConfirm.Text == "" || txtEmail.Text == "" || txtFirstName.Text == "" || txtLastName.Text == "" || txtPassword.Text == "" || txtUsername.Text == "")
             {
                 CaseteGoale caseteGoale = new CaseteGoale();
                 caseteGoale.ShowDialog();
                 return;
             }
-            else if(txtConfirm.Text!=txtPassword.Text)
+            else if (txtConfirm.Text != txtPassword.Text)
             {
                 ConfirmareParola confirmareParola = new ConfirmareParola();
                 confirmareParola.ShowDialog();
                 return;
             }
 
-            MySqlConnection connection;
-            string server = "127.0.0.1";
-            string database = "gamdb";
-            string uid = "admin";
-            string password = "admin";
-            string connectionString;
-            connectionString = "SERVER=" + server + ";" + "DATABASE=" + database + ";" + "UID=" + uid + ";" + "PASSWORD=" + password + ";";
-            connection = new MySqlConnection(connectionString);
-            if(comboBox.Text=="Participant")
+            MyUser user = new MyUser()
             {
-                connection.ConnectionString = connectionString;
-                connection.Open();
-                MySqlCommand cmd = new MySqlCommand("insert into participants (FirstName,LastName,Email,Username,Password) values(@FirstName,@LastName,@Email,@Username,@Password)", connection);
-                cmd.Parameters.AddWithValue("@FirstName", txtFirstName.Text);
-                cmd.Parameters.AddWithValue("@LastName", txtLastName.Text);
-                cmd.Parameters.AddWithValue("@Email", txtEmail.Text);
-                cmd.Parameters.AddWithValue("@Username", txtUsername.Text);
-                cmd.Parameters.AddWithValue("@Password", CreateMD5(txtPassword.Text));
-                cmd.ExecuteNonQuery();
+                Username = txtUsername.Text,
+                Password = CreateMD5(txtPassword.Text),
+                FirstName = txtFirstName.Text,
+                LastName = txtLastName.Text,
+                Email = txtEmail.Text,
+                AccountType = cmbType.Text
+            };
 
-                ContCreatCuSucces contCreatCuScucces = new ContCreatCuSucces();
-                contCreatCuScucces.ShowDialog();
+            SetResponse set = client.Set(@"Users/" + txtUsername.Text, user);
 
-                this.Close();
-            }
-            else if(comboBox.Text=="Warden")
+            ContCreatCuSucces contCreatCuScucces = new ContCreatCuSucces();
+            contCreatCuScucces.ShowDialog();
+
+            this.Close();
+        }
+
+        private void Register_Paint(object sender, PaintEventArgs e)
+        {
+            using (LinearGradientBrush brush = new LinearGradientBrush(this.ClientRectangle,
+                                                               Color.FromArgb(5, 37, 84),
+                                                               Color.FromArgb(4, 29, 66),
+                                                              90F))
             {
-                connection.ConnectionString = connectionString;
-                connection.Open();
-                MySqlCommand cmd = new MySqlCommand("insert into warden (FirstName,LastName,Email,Username,Password) values(@FirstName,@LastName,@Email,@Username,@Password)", connection);
-                cmd.Parameters.AddWithValue("@FirstName", txtFirstName.Text);
-                cmd.Parameters.AddWithValue("@LastName", txtLastName.Text);
-                cmd.Parameters.AddWithValue("@Email", txtEmail.Text);
-                cmd.Parameters.AddWithValue("@Username", txtUsername.Text);
-                cmd.Parameters.AddWithValue("@Password", CreateMD5(txtPassword.Text));
-                cmd.ExecuteNonQuery();
-
-                ContCreatCuSucces contCreatCuScucces = new ContCreatCuSucces();
-                contCreatCuScucces.ShowDialog();
-
-                this.Close();
+                e.Graphics.FillRectangle(brush, this.ClientRectangle);
             }
-            connection.Close();
-
         }
     }
 }

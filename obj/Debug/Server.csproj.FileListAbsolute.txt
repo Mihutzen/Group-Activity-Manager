@@ -255,3 +255,14 @@ C:\Users\czupp\Desktop\Licenta\Licenta\obj\Debug\Server.ContCreatCuSucces.resour
 C:\Users\czupp\Desktop\Licenta\Licenta\obj\Debug\Server.Login.resources
 C:\Users\czupp\Desktop\Licenta\Licenta\obj\Debug\Server.Register.resources
 C:\Users\czupp\Desktop\Licenta\Licenta\obj\Debug\Server.csproj.CopyComplete
+C:\Users\czupp\Desktop\Licenta\Licenta\obj\Debug\Server.Introduceti.resources
+C:\Users\czupp\Desktop\Licenta\Licenta\obj\Debug\Server.Nepotrivire.resources
+C:\Users\czupp\Desktop\Licenta\Licenta\bin\Debug\OpenHtmlToPdf.dll
+C:\Users\czupp\Desktop\Licenta\Licenta\bin\Debug\AsyncIO.dll
+C:\Users\czupp\Desktop\Licenta\Licenta\bin\Debug\NaCl.dll
+C:\Users\czupp\Desktop\Licenta\Licenta\bin\Debug\NetMQ.dll
+C:\Users\czupp\Desktop\Licenta\Licenta\bin\Debug\System.ValueTuple.dll
+C:\Users\czupp\Desktop\Licenta\Licenta\bin\Debug\AsyncIO.pdb
+C:\Users\czupp\Desktop\Licenta\Licenta\bin\Debug\NaCl.xml
+C:\Users\czupp\Desktop\Licenta\Licenta\bin\Debug\NetMQ.xml
+C:\Users\czupp\Desktop\Licenta\Licenta\bin\Debug\System.ValueTuple.xml

@@ -27,7 +27,7 @@ namespace Server
             InitializeComponent();
             openChildFormInPanel(new FormHome());
             this.StartPosition = FormStartPosition.CenterScreen;
-            buttonHome.BackColor = Color.FromArgb(24, 44, 51);
+            buttonHome.BackColor = Color.FromArgb(6, 45, 103);
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -68,37 +68,37 @@ namespace Server
         private void buttonHome_Click(object sender, EventArgs e)
         {
             openChildFormInPanel(new FormHome());
-            buttonHome.BackColor = Color.FromArgb(24, 44, 51);
-            buttonServer.BackColor = Color.FromArgb(20, 35, 40);
-            buttonClient.BackColor = Color.FromArgb(20, 35, 40);
-            buttonAbout.BackColor = Color.FromArgb(20, 35, 40);
+            buttonHome.BackColor = Color.FromArgb(6, 45, 103);
+            buttonServer.BackColor = Color.FromArgb(4, 29, 66);
+            buttonClient.BackColor = Color.FromArgb(4, 29, 66);
+            buttonAbout.BackColor = Color.FromArgb(4, 29, 66);
         }
 
         private void buttonServer_Click(object sender, EventArgs e)
         {
             openChildFormInPanel(new FormServer());
-            buttonHome.BackColor = Color.FromArgb(20, 35, 40);
-            buttonServer.BackColor = Color.FromArgb(24, 44, 51);
-            buttonClient.BackColor = Color.FromArgb(20, 35, 40);
-            buttonAbout.BackColor = Color.FromArgb(20, 35, 40);
+            buttonHome.BackColor = Color.FromArgb(4, 29, 66);
+            buttonServer.BackColor = Color.FromArgb(6, 45, 103);
+            buttonClient.BackColor = Color.FromArgb(4, 29, 66);
+            buttonAbout.BackColor = Color.FromArgb(4, 29, 66);
         }
 
         private void buttonClient_Click(object sender, EventArgs e)
         {
             openChildFormInPanel(new FormClient());
-            buttonHome.BackColor = Color.FromArgb(20, 35, 40);
-            buttonServer.BackColor = Color.FromArgb(24, 35, 40);
-            buttonClient.BackColor = Color.FromArgb(20, 44, 51);
-            buttonAbout.BackColor = Color.FromArgb(20, 35, 40);
+            buttonHome.BackColor = Color.FromArgb(4, 29, 66);
+            buttonServer.BackColor = Color.FromArgb(4, 29, 66);
+            buttonClient.BackColor = Color.FromArgb(6, 45, 103);
+            buttonAbout.BackColor = Color.FromArgb(4, 29, 66);
         }
 
         private void buttonAbout_Click(object sender, EventArgs e)
         {
             openChildFormInPanel(new FormAbout());
-            buttonHome.BackColor = Color.FromArgb(20, 35, 40);
-            buttonServer.BackColor = Color.FromArgb(24, 35, 40);
-            buttonClient.BackColor = Color.FromArgb(20, 35, 40);
-            buttonAbout.BackColor = Color.FromArgb(20, 44, 51);
+            buttonHome.BackColor = Color.FromArgb(4, 29, 66);
+            buttonServer.BackColor = Color.FromArgb(4, 29, 66);
+            buttonClient.BackColor = Color.FromArgb(4, 29, 66);
+            buttonAbout.BackColor = Color.FromArgb(6, 45, 103);
         }
     }
 }
