@@ -99,10 +99,20 @@ namespace Server
 
             if (MyUser.IsEqual(ResUser, CurUser))
             {
-                this.Hide();
-                var f1 = new Form1();
-                f1.Closed += (s, args) => this.Close();
-                f1.Show();
+                if(ResUser.AccountType.Equals("Participant"))
+                {
+                    this.Hide();
+                    var f1 = new Form2();
+                    f1.Closed += (s, args) => this.Close();
+                    f1.Show();
+                }
+                else
+                {
+                    this.Hide();
+                    var f1 = new Form1();
+                    f1.Closed += (s, args) => this.Close();
+                    f1.Show();
+                }
             }
             
         }

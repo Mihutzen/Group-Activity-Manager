@@ -11,18 +11,17 @@ using System.Runtime.InteropServices;
 
 namespace Server
 {
-    public partial class Form1 : Form
+    public partial class Form2 : Form
     {
-
         public const int WM_NCLBUTTONDOWN = 0xA1;
         public const int HT_CAPTION = 0x2;
 
         [DllImportAttribute("user32.dll")]
-        public static extern int SendMessage(IntPtr hWnd,int Msg, int wParam, int lParam);
+        public static extern int SendMessage(IntPtr hWnd, int Msg, int wParam, int lParam);
         [DllImportAttribute("user32.dll")]
         public static extern bool ReleaseCapture();
 
-        public Form1()
+        public Form2()
         {
             InitializeComponent();
             openChildFormInPanel(new FormHome());
@@ -30,12 +29,12 @@ namespace Server
             buttonHome.BackColor = Color.FromArgb(6, 45, 103);
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void buttonClose_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void buttonMinimize_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
         }
@@ -69,38 +68,25 @@ namespace Server
         {
             openChildFormInPanel(new FormHome());
             buttonHome.BackColor = Color.FromArgb(6, 45, 103);
-            buttonServer.BackColor = Color.FromArgb(4, 29, 66);
             buttonClient.BackColor = Color.FromArgb(4, 29, 66);
-            buttonAC.BackColor = Color.FromArgb(4, 29, 66);
-        }
-
-        private void buttonServer_Click(object sender, EventArgs e)
-        {
-            openChildFormInPanel(new FormServer());
-            buttonHome.BackColor = Color.FromArgb(4, 29, 66);
-            buttonServer.BackColor = Color.FromArgb(6, 45, 103);
-            buttonClient.BackColor = Color.FromArgb(4, 29, 66);
-            buttonAC.BackColor = Color.FromArgb(4, 29, 66);
+            buttonHelp.BackColor = Color.FromArgb(4, 29, 66);
         }
 
         private void buttonClient_Click(object sender, EventArgs e)
         {
             openChildFormInPanel(new FormClient());
             buttonHome.BackColor = Color.FromArgb(4, 29, 66);
-            buttonServer.BackColor = Color.FromArgb(4, 29, 66);
             buttonClient.BackColor = Color.FromArgb(6, 45, 103);
-            buttonAC.BackColor = Color.FromArgb(4, 29, 66);
+            buttonHelp.BackColor = Color.FromArgb(4, 29, 66);
         }
 
-        private void buttonAC_Click(object sender, EventArgs e)
+        private void buttonHelp_Click(object sender, EventArgs e)
         {
-            openChildFormInPanel(new FormAC());
+            openChildFormInPanel(new FormAC());//TODO: Form Help
             buttonHome.BackColor = Color.FromArgb(4, 29, 66);
-            buttonServer.BackColor = Color.FromArgb(4, 29, 66);
             buttonClient.BackColor = Color.FromArgb(4, 29, 66);
-            buttonAC.BackColor = Color.FromArgb(6, 45, 103);
+            buttonHelp.BackColor = Color.FromArgb(6, 45, 103);
         }
-
         private void panelMenu_Paint(object sender, PaintEventArgs e)
         {
 
@@ -122,6 +108,26 @@ namespace Server
         }
 
         private void panelMain_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panelMenu_Paint_1(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void buttonInvizibil_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panelLogo_Paint_1(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panelTop_Paint_1(object sender, PaintEventArgs e)
         {
 
         }

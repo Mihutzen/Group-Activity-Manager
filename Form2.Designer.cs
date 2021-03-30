@@ -1,6 +1,6 @@
 ﻿namespace Server
 {
-    partial class Form1
+    partial class Form2
     {
         /// <summary>
         /// Required designer variable.
@@ -28,11 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
             this.panelMenu = new System.Windows.Forms.Panel();
-            this.buttonAC = new System.Windows.Forms.Button();
+            this.buttonHelp = new System.Windows.Forms.Button();
             this.buttonClient = new System.Windows.Forms.Button();
-            this.buttonServer = new System.Windows.Forms.Button();
             this.buttonHome = new System.Windows.Forms.Button();
             this.buttonInvizibil = new System.Windows.Forms.Button();
             this.panelLogo = new System.Windows.Forms.FlowLayoutPanel();
@@ -47,9 +46,8 @@
             // panelMenu
             // 
             this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(29)))), ((int)(((byte)(66)))));
-            this.panelMenu.Controls.Add(this.buttonAC);
+            this.panelMenu.Controls.Add(this.buttonHelp);
             this.panelMenu.Controls.Add(this.buttonClient);
-            this.panelMenu.Controls.Add(this.buttonServer);
             this.panelMenu.Controls.Add(this.buttonHome);
             this.panelMenu.Controls.Add(this.buttonInvizibil);
             this.panelMenu.Controls.Add(this.panelLogo);
@@ -57,26 +55,26 @@
             this.panelMenu.Location = new System.Drawing.Point(0, 0);
             this.panelMenu.Name = "panelMenu";
             this.panelMenu.Size = new System.Drawing.Size(329, 570);
-            this.panelMenu.TabIndex = 0;
-            this.panelMenu.Paint += new System.Windows.Forms.PaintEventHandler(this.panelMenu_Paint);
+            this.panelMenu.TabIndex = 3;
+            this.panelMenu.Paint += new System.Windows.Forms.PaintEventHandler(this.panelMenu_Paint_1);
             // 
-            // buttonAC
+            // buttonHelp
             // 
-            this.buttonAC.Dock = System.Windows.Forms.DockStyle.Top;
-            this.buttonAC.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(45)))), ((int)(((byte)(103)))));
-            this.buttonAC.FlatAppearance.BorderSize = 0;
-            this.buttonAC.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(45)))), ((int)(((byte)(103)))));
-            this.buttonAC.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(45)))), ((int)(((byte)(103)))));
-            this.buttonAC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonAC.Font = new System.Drawing.Font("Yu Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonAC.ForeColor = System.Drawing.Color.White;
-            this.buttonAC.Location = new System.Drawing.Point(0, 406);
-            this.buttonAC.Name = "buttonAC";
-            this.buttonAC.Size = new System.Drawing.Size(329, 55);
-            this.buttonAC.TabIndex = 5;
-            this.buttonAC.Text = "Available Connections";
-            this.buttonAC.UseVisualStyleBackColor = true;
-            this.buttonAC.Click += new System.EventHandler(this.buttonAC_Click);
+            this.buttonHelp.Dock = System.Windows.Forms.DockStyle.Top;
+            this.buttonHelp.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(45)))), ((int)(((byte)(103)))));
+            this.buttonHelp.FlatAppearance.BorderSize = 0;
+            this.buttonHelp.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(45)))), ((int)(((byte)(103)))));
+            this.buttonHelp.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(45)))), ((int)(((byte)(103)))));
+            this.buttonHelp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonHelp.Font = new System.Drawing.Font("Yu Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonHelp.ForeColor = System.Drawing.Color.White;
+            this.buttonHelp.Location = new System.Drawing.Point(0, 351);
+            this.buttonHelp.Name = "buttonHelp";
+            this.buttonHelp.Size = new System.Drawing.Size(329, 55);
+            this.buttonHelp.TabIndex = 5;
+            this.buttonHelp.Text = "Help";
+            this.buttonHelp.UseVisualStyleBackColor = true;
+            this.buttonHelp.Click += new System.EventHandler(this.buttonHelp_Click);
             // 
             // buttonClient
             // 
@@ -88,31 +86,13 @@
             this.buttonClient.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonClient.Font = new System.Drawing.Font("Yu Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonClient.ForeColor = System.Drawing.Color.White;
-            this.buttonClient.Location = new System.Drawing.Point(0, 351);
+            this.buttonClient.Location = new System.Drawing.Point(0, 296);
             this.buttonClient.Name = "buttonClient";
             this.buttonClient.Size = new System.Drawing.Size(329, 55);
-            this.buttonClient.TabIndex = 5;
+            this.buttonClient.TabIndex = 4;
             this.buttonClient.Text = "Client";
             this.buttonClient.UseVisualStyleBackColor = true;
             this.buttonClient.Click += new System.EventHandler(this.buttonClient_Click);
-            // 
-            // buttonServer
-            // 
-            this.buttonServer.Dock = System.Windows.Forms.DockStyle.Top;
-            this.buttonServer.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(45)))), ((int)(((byte)(103)))));
-            this.buttonServer.FlatAppearance.BorderSize = 0;
-            this.buttonServer.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(45)))), ((int)(((byte)(103)))));
-            this.buttonServer.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(45)))), ((int)(((byte)(103)))));
-            this.buttonServer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonServer.Font = new System.Drawing.Font("Yu Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonServer.ForeColor = System.Drawing.Color.White;
-            this.buttonServer.Location = new System.Drawing.Point(0, 296);
-            this.buttonServer.Name = "buttonServer";
-            this.buttonServer.Size = new System.Drawing.Size(329, 55);
-            this.buttonServer.TabIndex = 4;
-            this.buttonServer.Text = "Server";
-            this.buttonServer.UseVisualStyleBackColor = true;
-            this.buttonServer.Click += new System.EventHandler(this.buttonServer_Click);
             // 
             // buttonHome
             // 
@@ -147,7 +127,7 @@
             this.buttonInvizibil.Size = new System.Drawing.Size(329, 55);
             this.buttonInvizibil.TabIndex = 3;
             this.buttonInvizibil.UseVisualStyleBackColor = true;
-            this.buttonInvizibil.Click += new System.EventHandler(this.buttonInvizibil_Click);
+            this.buttonInvizibil.Click += new System.EventHandler(this.buttonInvizibil_Click_1);
             // 
             // panelLogo
             // 
@@ -158,7 +138,7 @@
             this.panelLogo.Name = "panelLogo";
             this.panelLogo.Size = new System.Drawing.Size(329, 186);
             this.panelLogo.TabIndex = 1;
-            this.panelLogo.Paint += new System.Windows.Forms.PaintEventHandler(this.panelLogo_Paint);
+            this.panelLogo.Paint += new System.Windows.Forms.PaintEventHandler(this.panelLogo_Paint_1);
             // 
             // panelTop
             // 
@@ -168,12 +148,12 @@
             this.panelTop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(29)))), ((int)(((byte)(66)))));
             this.panelTop.Controls.Add(this.buttonMinimize);
             this.panelTop.Controls.Add(this.buttonClose);
-            this.panelTop.Location = new System.Drawing.Point(329, 0);
+            this.panelTop.Location = new System.Drawing.Point(328, 0);
             this.panelTop.Name = "panelTop";
             this.panelTop.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.panelTop.Size = new System.Drawing.Size(819, 49);
-            this.panelTop.TabIndex = 1;
-            this.panelTop.Paint += new System.Windows.Forms.PaintEventHandler(this.panelTop_Paint);
+            this.panelTop.TabIndex = 4;
+            this.panelTop.Paint += new System.Windows.Forms.PaintEventHandler(this.panelTop_Paint_1);
             this.panelTop.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseDown);
             // 
             // buttonMinimize
@@ -192,7 +172,7 @@
             this.buttonMinimize.TabIndex = 3;
             this.buttonMinimize.Text = "–";
             this.buttonMinimize.UseVisualStyleBackColor = true;
-            this.buttonMinimize.Click += new System.EventHandler(this.button3_Click);
+            this.buttonMinimize.Click += new System.EventHandler(this.buttonMinimize_Click);
             // 
             // buttonClose
             // 
@@ -210,29 +190,29 @@
             this.buttonClose.TabIndex = 2;
             this.buttonClose.Text = "X";
             this.buttonClose.UseVisualStyleBackColor = true;
-            this.buttonClose.Click += new System.EventHandler(this.button1_Click);
+            this.buttonClose.Click += new System.EventHandler(this.buttonClose_Click);
             // 
             // panelMain
             // 
             this.panelMain.BackColor = System.Drawing.Color.White;
-            this.panelMain.Location = new System.Drawing.Point(329, 49);
+            this.panelMain.Location = new System.Drawing.Point(328, 49);
             this.panelMain.Name = "panelMain";
             this.panelMain.Size = new System.Drawing.Size(818, 521);
-            this.panelMain.TabIndex = 2;
+            this.panelMain.TabIndex = 5;
             this.panelMain.Paint += new System.Windows.Forms.PaintEventHandler(this.panelMain_Paint);
             // 
-            // Form1
+            // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1147, 570);
-            this.Controls.Add(this.panelMain);
-            this.Controls.Add(this.panelTop);
             this.Controls.Add(this.panelMenu);
+            this.Controls.Add(this.panelTop);
+            this.Controls.Add(this.panelMain);
             this.ForeColor = System.Drawing.Color.White;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "Form2";
+            this.Text = "Form2";
             this.panelMenu.ResumeLayout(false);
             this.panelTop.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -242,16 +222,14 @@
         #endregion
 
         private System.Windows.Forms.Panel panelMenu;
+        private System.Windows.Forms.Button buttonHelp;
+        private System.Windows.Forms.Button buttonClient;
+        private System.Windows.Forms.Button buttonHome;
+        private System.Windows.Forms.Button buttonInvizibil;
         private System.Windows.Forms.FlowLayoutPanel panelLogo;
         private System.Windows.Forms.Panel panelTop;
         private System.Windows.Forms.Button buttonMinimize;
         private System.Windows.Forms.Button buttonClose;
-        private System.Windows.Forms.Button buttonInvizibil;
         private System.Windows.Forms.Panel panelMain;
-        private System.Windows.Forms.Button buttonAC;
-        private System.Windows.Forms.Button buttonClient;
-        private System.Windows.Forms.Button buttonServer;
-        private System.Windows.Forms.Button buttonHome;
     }
 }
-
