@@ -8,6 +8,8 @@ namespace Server
 {
     class Connections
     {
+        public string Position { get; set; }
+        public string Nume { get; set; }
 
     }
 }

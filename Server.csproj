@@ -228,6 +228,12 @@
     <Compile Include="ConfirmareParola.Designer.cs">
       <DependentUpon>ConfirmareParola.cs</DependentUpon>
     </Compile>
+    <Compile Include="ConnectionProblem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConnectionProblem.Designer.cs">
+      <DependentUpon>ConnectionProblem.cs</DependentUpon>
+    </Compile>
     <Compile Include="Connections.cs" />
     <Compile Include="ContCreatCuSucces.cs">
       <SubType>Form</SubType>

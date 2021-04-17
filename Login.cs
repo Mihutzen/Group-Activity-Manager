@@ -26,6 +26,8 @@ namespace Server
         [DllImportAttribute("user32.dll")]
         public static extern bool ReleaseCapture();
 
+        public static string connectedName;
+
         IFirebaseConfig ifc = new FirebaseConfig()
         {
             AuthSecret = "dv61oELdN30DK7KcH56f1B3gujL6FFUiJ0Y2l5wh",
@@ -99,7 +101,9 @@ namespace Server
 
             if (MyUser.IsEqual(ResUser, CurUser))
             {
-                if(ResUser.AccountType.Equals("Participant"))
+                connectedName = ResUser.FirstName + " " + ResUser.LastName;
+
+                if (ResUser.AccountType.Equals("Participant"))
                 {
                     this.Hide();
                     var f1 = new Form2();

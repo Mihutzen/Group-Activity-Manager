@@ -21,7 +21,9 @@ namespace Server
 {
     public partial class FormServer : Form
     {
-        List<Form> formList = new List<Form>();
+        public static List<Form> formList = new List<Form>();
+        public static string sessionName = "";
+        
         public FormServer()
         {
             InitializeComponent();
@@ -82,32 +84,29 @@ namespace Server
             }
             else
             {
-                Session currentSession = new Session()
+               sessionName = txtCode.Text;
+               Session currentSession = new Session()
                 {
                     Code = txtCode.Text,
                     IP = FindIPv4Adress(),
-                    Port = FreeTcpPort().ToString()
+                    Port = CreatePorts()
                 };
 
                 SetResponse set = client.Set(@"Session/" + txtCode.Text, currentSession);
-
-                formList.Add(new FormScreen(int.Parse(currentSession.Port)));
-                formList[formList.Count - 1].Show();
             }
-
-
-
-            /*
-            
-            else
-            {
-                formList.Add(new FormScreen(int.Parse(PortNumber.Text)));
-                                 this.formList[formList.Count - 1].Controls.Add(new TextBox());
-                
-            }
-            */
-
-
         }
+
+        private List<string> CreatePorts()
+        {
+            List<string> ports = new List<string>();
+            for(int i=0; i<10; i++)
+            {
+                string aux = FreeTcpPort().ToString();
+                ports.Add(aux);
+                formList.Add(new FormScreen(int.Parse(aux)));
+            }
+            return ports;
+        }
+
     }
 }

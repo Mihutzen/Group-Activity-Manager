@@ -30,8 +30,10 @@ namespace Server
             client = new TcpClient();
             Listening = new Thread(StartListening);
             GetImage = new Thread(ReceiveImage);
-
+            server = new TcpListener(IPAddress.Any, port);
+            Listening.Start();
             InitializeComponent();
+
         }
 
         private void StartListening()
@@ -41,7 +43,7 @@ namespace Server
                 server.Start();
                 client = server.AcceptTcpClient();
             }
-            GetImage.Start();
+            //GetImage.Start();
         }
 
         private void StopListening()
@@ -49,7 +51,11 @@ namespace Server
             server.Stop();
             client = null;
             if (Listening.IsAlive) Listening.Abort();
-            if (GetImage.IsAlive) GetImage.Abort();
+            if (GetImage.IsAlive)
+            {
+                GetImage.Abort();
+
+            }
         }
 
         private void ReceiveImage()
@@ -59,20 +65,22 @@ namespace Server
             {
                 mainStream = client.GetStream();
                 pictureBox1.Image = (Image)binFormatter.Deserialize(mainStream);
+                Thread.Sleep(5);
             }
+
         }
 
         protected override void OnLoad(EventArgs e)
         {
             base.OnLoad(e);
-            server = new TcpListener(IPAddress.Any, port);
-            Listening.Start();
+            GetImage.Start();
         }
 
-        protected override void OnFormClosing(FormClosingEventArgs e)
+        private void FormScreen_FormClosing(object sender, FormClosingEventArgs e)
         {
-            base.OnFormClosing(e);
-            StopListening();
+            this.Hide();
+            e.Cancel = true;
+            this.Parent = null;
         }
     }
 }

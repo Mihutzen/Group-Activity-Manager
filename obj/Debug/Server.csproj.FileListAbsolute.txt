@@ -143,7 +143,6 @@ C:\Users\czupp\Desktop\Licenta\Licenta - Copy - Copy - Copy\bin\Debug\System.Run
 C:\Users\czupp\Desktop\Licenta\Licenta - Copy - Copy - Copy\bin\Debug\System.Threading.Tasks.Extensions.xml
 C:\Users\czupp\Desktop\Licenta\Licenta - Copy - Copy - Copy\obj\Debug\Server.csprojAssemblyReference.cache
 C:\Users\czupp\Desktop\Licenta\Licenta - Copy - Copy - Copy\obj\Debug\Server.Form1.resources
-C:\Users\czupp\Desktop\Licenta\Licenta - Copy - Copy - Copy\obj\Debug\Server.FormAbout.resources
 C:\Users\czupp\Desktop\Licenta\Licenta - Copy - Copy - Copy\obj\Debug\Server.FormClient.resources
 C:\Users\czupp\Desktop\Licenta\Licenta - Copy - Copy - Copy\obj\Debug\Server.FormHome.resources
 C:\Users\czupp\Desktop\Licenta\Licenta - Copy - Copy - Copy\obj\Debug\Server.FormScreen.resources
@@ -389,3 +388,156 @@ C:\Users\czupp\Desktop\Licenta\Licenta - Copy\obj\Debug\Server.csproj.CopyComple
 C:\Users\czupp\Desktop\Licenta\Licenta - Copy\obj\Debug\Server.exe
 C:\Users\czupp\Desktop\Licenta\Licenta - Copy\obj\Debug\Server.pdb
 C:\Users\czupp\Desktop\Licenta\Licenta - Copy\obj\Debug\Server.FormAC.resources
+C:\Users\czupp\Desktop\Licenta\Licenta - Copy - Copy\bin\Debug\Server.exe.config
+C:\Users\czupp\Desktop\Licenta\Licenta - Copy - Copy\bin\Debug\Server.exe
+C:\Users\czupp\Desktop\Licenta\Licenta - Copy - Copy\bin\Debug\Server.pdb
+C:\Users\czupp\Desktop\Licenta\Licenta - Copy - Copy\bin\Debug\AsyncIO.dll
+C:\Users\czupp\Desktop\Licenta\Licenta - Copy - Copy\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\czupp\Desktop\Licenta\Licenta - Copy - Copy\bin\Debug\EntityFramework.dll
+C:\Users\czupp\Desktop\Licenta\Licenta - Copy - Copy\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\czupp\Desktop\Licenta\Licenta - Copy - Copy\bin\Debug\FireSharp.dll
+C:\Users\czupp\Desktop\Licenta\Licenta - Copy - Copy\bin\Debug\FireSharp.Serialization.JsonNet.dll
+C:\Users\czupp\Desktop\Licenta\Licenta - Copy - Copy\bin\Debug\Google.Protobuf.dll
+C:\Users\czupp\Desktop\Licenta\Licenta - Copy - Copy\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\czupp\Desktop\Licenta\Licenta - Copy - Copy\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\czupp\Desktop\Licenta\Licenta - Copy - Copy\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\czupp\Desktop\Licenta\Licenta - Copy - Copy\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\czupp\Desktop\Licenta\Licenta - Copy - Copy\bin\Debug\Microsoft.Bcl.HashCode.dll
+C:\Users\czupp\Desktop\Licenta\Licenta - Copy - Copy\bin\Debug\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\czupp\Desktop\Licenta\Licenta - Copy - Copy\bin\Debug\Microsoft.EntityFrameworkCore.dll
+C:\Users\czupp\Desktop\Licenta\Licenta - Copy - Copy\bin\Debug\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\czupp\Desktop\Licenta\Licenta - Copy - Copy\bin\Debug\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\czupp\Desktop\Licenta\Licenta - Copy - Copy\bin\Debug\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\czupp\Desktop\Licenta\Licenta - Copy - Copy\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\czupp\Desktop\Licenta\Licenta - Copy - Copy\bin\Debug\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\czupp\Desktop\Licenta\Licenta - Copy - Copy\bin\Debug\Microsoft.Extensions.Configuration.dll
+C:\Users\czupp\Desktop\Licenta\Licenta - Copy - Copy\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\czupp\Desktop\Licenta\Licenta - Copy - Copy\bin\Debug\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\czupp\Desktop\Licenta\Licenta - Copy - Copy\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\czupp\Desktop\Licenta\Licenta - Copy - Copy\bin\Debug\Microsoft.Extensions.Logging.dll
+C:\Users\czupp\Desktop\Licenta\Licenta - Copy - Copy\bin\Debug\Microsoft.Extensions.Options.dll
+C:\Users\czupp\Desktop\Licenta\Licenta - Copy - Copy\bin\Debug\Microsoft.Extensions.Primitives.dll
+C:\Users\czupp\Desktop\Licenta\Licenta - Copy - Copy\bin\Debug\Microsoft.Threading.Tasks.dll
+C:\Users\czupp\Desktop\Licenta\Licenta - Copy - Copy\bin\Debug\Microsoft.Threading.Tasks.Extensions.Desktop.dll
+C:\Users\czupp\Desktop\Licenta\Licenta - Copy - Copy\bin\Debug\Microsoft.Threading.Tasks.Extensions.dll
+C:\Users\czupp\Desktop\Licenta\Licenta - Copy - Copy\bin\Debug\MySql.Data.dll
+C:\Users\czupp\Desktop\Licenta\Licenta - Copy - Copy\bin\Debug\MySql.Data.Entity.EF6.dll
+C:\Users\czupp\Desktop\Licenta\Licenta - Copy - Copy\bin\Debug\MySql.Data.EntityFramework.dll
+C:\Users\czupp\Desktop\Licenta\Licenta - Copy - Copy\bin\Debug\MySql.Data.EntityFrameworkCore.dll
+C:\Users\czupp\Desktop\Licenta\Licenta - Copy - Copy\bin\Debug\NaCl.dll
+C:\Users\czupp\Desktop\Licenta\Licenta - Copy - Copy\bin\Debug\NetMQ.dll
+C:\Users\czupp\Desktop\Licenta\Licenta - Copy - Copy\bin\Debug\Newtonsoft.Json.dll
+C:\Users\czupp\Desktop\Licenta\Licenta - Copy - Copy\bin\Debug\OpenHtmlToPdf.dll
+C:\Users\czupp\Desktop\Licenta\Licenta - Copy - Copy\bin\Debug\Renci.SshNet.dll
+C:\Users\czupp\Desktop\Licenta\Licenta - Copy - Copy\bin\Debug\RestSharp.dll
+C:\Users\czupp\Desktop\Licenta\Licenta - Copy - Copy\bin\Debug\System.Buffers.dll
+C:\Users\czupp\Desktop\Licenta\Licenta - Copy - Copy\bin\Debug\System.Collections.Immutable.dll
+C:\Users\czupp\Desktop\Licenta\Licenta - Copy - Copy\bin\Debug\System.ComponentModel.Annotations.dll
+C:\Users\czupp\Desktop\Licenta\Licenta - Copy - Copy\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\czupp\Desktop\Licenta\Licenta - Copy - Copy\bin\Debug\System.Memory.dll
+C:\Users\czupp\Desktop\Licenta\Licenta - Copy - Copy\bin\Debug\System.Net.Http.Extensions.dll
+C:\Users\czupp\Desktop\Licenta\Licenta - Copy - Copy\bin\Debug\System.Net.Http.Primitives.dll
+C:\Users\czupp\Desktop\Licenta\Licenta - Copy - Copy\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\czupp\Desktop\Licenta\Licenta - Copy - Copy\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\czupp\Desktop\Licenta\Licenta - Copy - Copy\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\czupp\Desktop\Licenta\Licenta - Copy - Copy\bin\Debug\System.ValueTuple.dll
+C:\Users\czupp\Desktop\Licenta\Licenta - Copy - Copy\bin\Debug\Ubiety.Dns.Core.dll
+C:\Users\czupp\Desktop\Licenta\Licenta - Copy - Copy\bin\Debug\Zstandard.Net.dll
+C:\Users\czupp\Desktop\Licenta\Licenta - Copy - Copy\bin\Debug\AsyncIO.pdb
+C:\Users\czupp\Desktop\Licenta\Licenta - Copy - Copy\bin\Debug\EntityFramework.xml
+C:\Users\czupp\Desktop\Licenta\Licenta - Copy - Copy\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\czupp\Desktop\Licenta\Licenta - Copy - Copy\bin\Debug\Google.Protobuf.pdb
+C:\Users\czupp\Desktop\Licenta\Licenta - Copy - Copy\bin\Debug\Google.Protobuf.xml
+C:\Users\czupp\Desktop\Licenta\Licenta - Copy - Copy\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\czupp\Desktop\Licenta\Licenta - Copy - Copy\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\czupp\Desktop\Licenta\Licenta - Copy - Copy\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\czupp\Desktop\Licenta\Licenta - Copy - Copy\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\czupp\Desktop\Licenta\Licenta - Copy - Copy\bin\Debug\Microsoft.Bcl.HashCode.xml
+C:\Users\czupp\Desktop\Licenta\Licenta - Copy - Copy\bin\Debug\Microsoft.EntityFrameworkCore.xml
+C:\Users\czupp\Desktop\Licenta\Licenta - Copy - Copy\bin\Debug\Microsoft.EntityFrameworkCore.Abstractions.xml
+C:\Users\czupp\Desktop\Licenta\Licenta - Copy - Copy\bin\Debug\Microsoft.EntityFrameworkCore.Relational.xml
+C:\Users\czupp\Desktop\Licenta\Licenta - Copy - Copy\bin\Debug\Microsoft.Extensions.Caching.Abstractions.xml
+C:\Users\czupp\Desktop\Licenta\Licenta - Copy - Copy\bin\Debug\Microsoft.Extensions.Caching.Memory.xml
+C:\Users\czupp\Desktop\Licenta\Licenta - Copy - Copy\bin\Debug\Microsoft.Extensions.Configuration.xml
+C:\Users\czupp\Desktop\Licenta\Licenta - Copy - Copy\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.xml
+C:\Users\czupp\Desktop\Licenta\Licenta - Copy - Copy\bin\Debug\Microsoft.Extensions.Configuration.Binder.xml
+C:\Users\czupp\Desktop\Licenta\Licenta - Copy - Copy\bin\Debug\Microsoft.Extensions.DependencyInjection.xml
+C:\Users\czupp\Desktop\Licenta\Licenta - Copy - Copy\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+C:\Users\czupp\Desktop\Licenta\Licenta - Copy - Copy\bin\Debug\Microsoft.Extensions.Logging.xml
+C:\Users\czupp\Desktop\Licenta\Licenta - Copy - Copy\bin\Debug\Microsoft.Extensions.Logging.Abstractions.xml
+C:\Users\czupp\Desktop\Licenta\Licenta - Copy - Copy\bin\Debug\Microsoft.Extensions.Options.xml
+C:\Users\czupp\Desktop\Licenta\Licenta - Copy - Copy\bin\Debug\Microsoft.Extensions.Primitives.xml
+C:\Users\czupp\Desktop\Licenta\Licenta - Copy - Copy\bin\Debug\Microsoft.Threading.Tasks.xml
+C:\Users\czupp\Desktop\Licenta\Licenta - Copy - Copy\bin\Debug\Microsoft.Threading.Tasks.Extensions.xml
+C:\Users\czupp\Desktop\Licenta\Licenta - Copy - Copy\bin\Debug\Microsoft.Threading.Tasks.Extensions.Desktop.xml
+C:\Users\czupp\Desktop\Licenta\Licenta - Copy - Copy\bin\Debug\MySql.Data.xml
+C:\Users\czupp\Desktop\Licenta\Licenta - Copy - Copy\bin\Debug\MySql.Data.Entity.EF6.xml
+C:\Users\czupp\Desktop\Licenta\Licenta - Copy - Copy\bin\Debug\MySql.Data.EntityFramework.xml
+C:\Users\czupp\Desktop\Licenta\Licenta - Copy - Copy\bin\Debug\MySql.Data.EntityFrameworkCore.xml
+C:\Users\czupp\Desktop\Licenta\Licenta - Copy - Copy\bin\Debug\NaCl.xml
+C:\Users\czupp\Desktop\Licenta\Licenta - Copy - Copy\bin\Debug\NetMQ.xml
+C:\Users\czupp\Desktop\Licenta\Licenta - Copy - Copy\bin\Debug\Newtonsoft.Json.xml
+C:\Users\czupp\Desktop\Licenta\Licenta - Copy - Copy\bin\Debug\Renci.SshNet.xml
+C:\Users\czupp\Desktop\Licenta\Licenta - Copy - Copy\bin\Debug\RestSharp.xml
+C:\Users\czupp\Desktop\Licenta\Licenta - Copy - Copy\bin\Debug\System.Buffers.xml
+C:\Users\czupp\Desktop\Licenta\Licenta - Copy - Copy\bin\Debug\System.Collections.Immutable.xml
+C:\Users\czupp\Desktop\Licenta\Licenta - Copy - Copy\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\czupp\Desktop\Licenta\Licenta - Copy - Copy\bin\Debug\System.Memory.xml
+C:\Users\czupp\Desktop\Licenta\Licenta - Copy - Copy\bin\Debug\System.Net.Http.Extensions.xml
+C:\Users\czupp\Desktop\Licenta\Licenta - Copy - Copy\bin\Debug\System.Net.Http.Primitives.xml
+C:\Users\czupp\Desktop\Licenta\Licenta - Copy - Copy\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\czupp\Desktop\Licenta\Licenta - Copy - Copy\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\czupp\Desktop\Licenta\Licenta - Copy - Copy\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\czupp\Desktop\Licenta\Licenta - Copy - Copy\bin\Debug\System.ValueTuple.xml
+C:\Users\czupp\Desktop\Licenta\Licenta - Copy - Copy\obj\Debug\Server.csproj.App.config
+C:\Users\czupp\Desktop\Licenta\Licenta - Copy - Copy\obj\Debug\Server.csprojAssemblyReference.cache
+C:\Users\czupp\Desktop\Licenta\Licenta - Copy - Copy\obj\Debug\Server.CaseteGoale.resources
+C:\Users\czupp\Desktop\Licenta\Licenta - Copy - Copy\obj\Debug\Server.ConfirmareParola.resources
+C:\Users\czupp\Desktop\Licenta\Licenta - Copy - Copy\obj\Debug\Server.ContCreatCuSucces.resources
+C:\Users\czupp\Desktop\Licenta\Licenta - Copy - Copy\obj\Debug\Server.Form1.resources
+C:\Users\czupp\Desktop\Licenta\Licenta - Copy - Copy\obj\Debug\Server.Form2.resources
+C:\Users\czupp\Desktop\Licenta\Licenta - Copy - Copy\obj\Debug\Server.FormAC.resources
+C:\Users\czupp\Desktop\Licenta\Licenta - Copy - Copy\obj\Debug\Server.FormClient.resources
+C:\Users\czupp\Desktop\Licenta\Licenta - Copy - Copy\obj\Debug\Server.FormHome.resources
+C:\Users\czupp\Desktop\Licenta\Licenta - Copy - Copy\obj\Debug\Server.FormScreen.resources
+C:\Users\czupp\Desktop\Licenta\Licenta - Copy - Copy\obj\Debug\Server.FormServer.resources
+C:\Users\czupp\Desktop\Licenta\Licenta - Copy - Copy\obj\Debug\Server.Introduceti.resources
+C:\Users\czupp\Desktop\Licenta\Licenta - Copy - Copy\obj\Debug\Server.Login.resources
+C:\Users\czupp\Desktop\Licenta\Licenta - Copy - Copy\obj\Debug\Server.Nepotrivire.resources
+C:\Users\czupp\Desktop\Licenta\Licenta - Copy - Copy\obj\Debug\Server.Properties.Resources.resources
+C:\Users\czupp\Desktop\Licenta\Licenta - Copy - Copy\obj\Debug\Server.Register.resources
+C:\Users\czupp\Desktop\Licenta\Licenta - Copy - Copy\obj\Debug\Server.csproj.GenerateResource.cache
+C:\Users\czupp\Desktop\Licenta\Licenta - Copy - Copy\obj\Debug\Server.csproj.CoreCompileInputs.cache
+C:\Users\czupp\Desktop\Licenta\Licenta - Copy - Copy\obj\Debug\Server.csproj.CopyComplete
+C:\Users\czupp\Desktop\Licenta\Licenta - Copy - Copy\obj\Debug\Server.exe
+C:\Users\czupp\Desktop\Licenta\Licenta - Copy - Copy\obj\Debug\Server.pdb
+C:\Users\czupp\Desktop\Licenta\Licenta - Copy - Copy - Copy\bin\Debug\AsyncIO.dll
+C:\Users\czupp\Desktop\Licenta\Licenta - Copy - Copy - Copy\bin\Debug\FireSharp.dll
+C:\Users\czupp\Desktop\Licenta\Licenta - Copy - Copy - Copy\bin\Debug\FireSharp.Serialization.JsonNet.dll
+C:\Users\czupp\Desktop\Licenta\Licenta - Copy - Copy - Copy\bin\Debug\Microsoft.Threading.Tasks.dll
+C:\Users\czupp\Desktop\Licenta\Licenta - Copy - Copy - Copy\bin\Debug\Microsoft.Threading.Tasks.Extensions.Desktop.dll
+C:\Users\czupp\Desktop\Licenta\Licenta - Copy - Copy - Copy\bin\Debug\Microsoft.Threading.Tasks.Extensions.dll
+C:\Users\czupp\Desktop\Licenta\Licenta - Copy - Copy - Copy\bin\Debug\NaCl.dll
+C:\Users\czupp\Desktop\Licenta\Licenta - Copy - Copy - Copy\bin\Debug\NetMQ.dll
+C:\Users\czupp\Desktop\Licenta\Licenta - Copy - Copy - Copy\bin\Debug\Newtonsoft.Json.dll
+C:\Users\czupp\Desktop\Licenta\Licenta - Copy - Copy - Copy\bin\Debug\OpenHtmlToPdf.dll
+C:\Users\czupp\Desktop\Licenta\Licenta - Copy - Copy - Copy\bin\Debug\RestSharp.dll
+C:\Users\czupp\Desktop\Licenta\Licenta - Copy - Copy - Copy\bin\Debug\System.Net.Http.Extensions.dll
+C:\Users\czupp\Desktop\Licenta\Licenta - Copy - Copy - Copy\bin\Debug\System.Net.Http.Primitives.dll
+C:\Users\czupp\Desktop\Licenta\Licenta - Copy - Copy - Copy\bin\Debug\System.ValueTuple.dll
+C:\Users\czupp\Desktop\Licenta\Licenta - Copy - Copy - Copy\bin\Debug\AsyncIO.pdb
+C:\Users\czupp\Desktop\Licenta\Licenta - Copy - Copy - Copy\bin\Debug\Microsoft.Threading.Tasks.xml
+C:\Users\czupp\Desktop\Licenta\Licenta - Copy - Copy - Copy\bin\Debug\Microsoft.Threading.Tasks.Extensions.xml
+C:\Users\czupp\Desktop\Licenta\Licenta - Copy - Copy - Copy\bin\Debug\Microsoft.Threading.Tasks.Extensions.Desktop.xml
+C:\Users\czupp\Desktop\Licenta\Licenta - Copy - Copy - Copy\bin\Debug\NaCl.xml
+C:\Users\czupp\Desktop\Licenta\Licenta - Copy - Copy - Copy\bin\Debug\NetMQ.xml
+C:\Users\czupp\Desktop\Licenta\Licenta - Copy - Copy - Copy\bin\Debug\Newtonsoft.Json.xml
+C:\Users\czupp\Desktop\Licenta\Licenta - Copy - Copy - Copy\bin\Debug\RestSharp.xml
+C:\Users\czupp\Desktop\Licenta\Licenta - Copy - Copy - Copy\bin\Debug\System.Net.Http.Extensions.xml
+C:\Users\czupp\Desktop\Licenta\Licenta - Copy - Copy - Copy\bin\Debug\System.Net.Http.Primitives.xml
+C:\Users\czupp\Desktop\Licenta\Licenta - Copy - Copy - Copy\bin\Debug\System.ValueTuple.xml
+C:\Users\czupp\Desktop\Licenta\Licenta - Copy - Copy - Copy\obj\Debug\Server.csproj.App.config
+C:\Users\czupp\Desktop\Licenta\Licenta - Copy - Copy - Copy\obj\Debug\Server.Form2.resources
+C:\Users\czupp\Desktop\Licenta\Licenta - Copy - Copy - Copy\obj\Debug\Server.FormAC.resources
+C:\Users\czupp\Desktop\Licenta\Licenta - Copy - Copy - Copy\obj\Debug\Server.Introduceti.resources
+C:\Users\czupp\Desktop\Licenta\Licenta - Copy - Copy - Copy\obj\Debug\Server.Nepotrivire.resources

@@ -69,7 +69,6 @@ namespace Server
             openChildFormInPanel(new FormHome());
             buttonHome.BackColor = Color.FromArgb(6, 45, 103);
             buttonClient.BackColor = Color.FromArgb(4, 29, 66);
-            buttonHelp.BackColor = Color.FromArgb(4, 29, 66);
         }
 
         private void buttonClient_Click(object sender, EventArgs e)
@@ -77,16 +76,8 @@ namespace Server
             openChildFormInPanel(new FormClient());
             buttonHome.BackColor = Color.FromArgb(4, 29, 66);
             buttonClient.BackColor = Color.FromArgb(6, 45, 103);
-            buttonHelp.BackColor = Color.FromArgb(4, 29, 66);
         }
 
-        private void buttonHelp_Click(object sender, EventArgs e)
-        {
-            openChildFormInPanel(new FormAC());//TODO: Form Help
-            buttonHome.BackColor = Color.FromArgb(4, 29, 66);
-            buttonClient.BackColor = Color.FromArgb(4, 29, 66);
-            buttonHelp.BackColor = Color.FromArgb(6, 45, 103);
-        }
         private void panelMenu_Paint(object sender, PaintEventArgs e)
         {
 

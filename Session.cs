@@ -10,6 +10,6 @@ namespace Server
     {
         public string Code { get; set; }
         public string IP { get; set; }
-        public string Port { get; set; }
+        public List<string> Port { get; set; }
     }
 }

@@ -92,7 +92,7 @@
             this.buttonClient.Name = "buttonClient";
             this.buttonClient.Size = new System.Drawing.Size(329, 55);
             this.buttonClient.TabIndex = 5;
-            this.buttonClient.Text = "Client";
+            this.buttonClient.Text = "Connect to someone";
             this.buttonClient.UseVisualStyleBackColor = true;
             this.buttonClient.Click += new System.EventHandler(this.buttonClient_Click);
             // 
@@ -110,7 +110,7 @@
             this.buttonServer.Name = "buttonServer";
             this.buttonServer.Size = new System.Drawing.Size(329, 55);
             this.buttonServer.TabIndex = 4;
-            this.buttonServer.Text = "Server";
+            this.buttonServer.Text = "Create connection";
             this.buttonServer.UseVisualStyleBackColor = true;
             this.buttonServer.Click += new System.EventHandler(this.buttonServer_Click);
             // 

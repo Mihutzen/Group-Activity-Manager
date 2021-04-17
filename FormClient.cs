@@ -76,8 +76,15 @@ namespace Server
             FirebaseResponse res = fbClient.Get(@"Session/" + txtCodeFornServer.Text);
             Session ResSes = res.ResultAs<Session>();// database result
 
-            client.Connect(ResSes.IP, int.Parse(ResSes.Port));
-            //MessageBox.Show("Acum ii poti vedea ecranul :))))))))");
+            int nr_port = 0;
+
+            while(ResSes.Port[nr_port].Contains("=>"))
+            {
+                nr_port++;
+            }
+            client.Connect(ResSes.IP, int.Parse(ResSes.Port[nr_port]));
+            ResSes.Port[nr_port] += "=>" + Login.connectedName;
+            FirebaseResponse res2 = fbClient.Set(@"Session/" + txtCodeFornServer.Text, ResSes);
             timer1.Start();
             
         }

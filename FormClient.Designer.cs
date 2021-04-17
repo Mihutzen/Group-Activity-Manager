@@ -47,9 +47,9 @@
             this.btnConnect.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnConnect.Font = new System.Drawing.Font("Yu Gothic", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnConnect.ForeColor = System.Drawing.Color.White;
-            this.btnConnect.Location = new System.Drawing.Point(247, 231);
+            this.btnConnect.Location = new System.Drawing.Point(222, 225);
             this.btnConnect.Name = "btnConnect";
-            this.btnConnect.Size = new System.Drawing.Size(260, 67);
+            this.btnConnect.Size = new System.Drawing.Size(347, 67);
             this.btnConnect.TabIndex = 6;
             this.btnConnect.Text = "Connect";
             this.btnConnect.UseVisualStyleBackColor = false;
@@ -61,9 +61,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtCodeFornServer.Font = new System.Drawing.Font("Yu Gothic", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCodeFornServer.ForeColor = System.Drawing.Color.Black;
-            this.txtCodeFornServer.Location = new System.Drawing.Point(365, 150);
+            this.txtCodeFornServer.Location = new System.Drawing.Point(251, 143);
             this.txtCodeFornServer.Name = "txtCodeFornServer";
-            this.txtCodeFornServer.Size = new System.Drawing.Size(350, 51);
+            this.txtCodeFornServer.Size = new System.Drawing.Size(537, 51);
             this.txtCodeFornServer.TabIndex = 5;
             // 
             // label1
@@ -73,7 +73,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Yu Gothic", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(118, 153);
+            this.label1.Location = new System.Drawing.Point(6, 147);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(226, 36);
             this.label1.TabIndex = 4;
